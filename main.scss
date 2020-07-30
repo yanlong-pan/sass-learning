@@ -87,15 +87,14 @@ body {
     display: block;
     padding: 0.2rem;
     border: $border-default;
+    &:hover,
+    &:active {
+      color: white;
+      background: map-get($colors, secondary);
+      border-color: map-get($colors, secondary);
+    }
   }
-  .documentation-link:hover,
-  .documentation-link:active {
-    color: white;
-    background: map-get($colors, secondary);
-    border-color: map-get($colors, secondary);
-  }
-}
-
+}  
 @media (min-width: 40rem) {
 
   .container {
